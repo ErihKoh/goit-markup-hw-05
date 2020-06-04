@@ -91,7 +91,6 @@ p {
 
 .page-header {
   width: 1600px;
-  border-bottom: 1px solid #ececec;
 }
 
 /* logo*/
@@ -168,14 +167,14 @@ p {
 }
 
 .site-nav-link .active::after {
-  content: "";
+  display: block;
 
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 
+  content: "";
   border-radius: 2px;
-  display: block;
   width: calc(100% - 2px);
   height: 4px;
 
@@ -580,6 +579,10 @@ address p:not(:last-child) {
 }
 
 /* portfolio */
+
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
 
 /* filter */
 

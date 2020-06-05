@@ -645,6 +645,7 @@ address p:not(:last-child) {
 .examples .item {
   margin-right: 30px;
   margin-bottom: 30px;
+  /* position: relative; */
 }
 
 .examples .item:nth-child(3n) {
@@ -681,4 +682,51 @@ address p:not(:last-child) {
   border-bottom: 1px solid #eeeeee;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.examples-card {
+  position: relative;
+}
+
+.examples-card::before {
+  display: inline-block;
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+}
+
+.card-text {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 63px 24px;
+  color: var(--primery-bg-color);
+  opacity: 0;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+}
+
+.examples-card:hover::before {
+  opacity: 1;
+}
+.examples-card:focus::before {
+  opacity: 1;
+}
+
+.examples-card:hover .card-text {
+  opacity: 1;
+}
+.examples-card:focus .card-text {
+  opacity: 1;
 }

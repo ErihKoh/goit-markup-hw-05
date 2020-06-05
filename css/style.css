@@ -718,16 +718,12 @@ address p:not(:last-child) {
   letter-spacing: 0.03em;
 }
 
-.examples-card:hover::before {
-  opacity: 1;
-}
+.examples-card:hover::before,
 .examples-card:focus::before {
   opacity: 1;
 }
 
-.examples-card:hover .card-text {
-  opacity: 1;
-}
+.examples-card:hover .card-text,
 .examples-card:focus .card-text {
   opacity: 1;
 }

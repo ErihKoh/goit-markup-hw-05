@@ -103,6 +103,7 @@ p {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
@@ -117,6 +118,7 @@ p {
 
 .web {
   color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .web:hover {
@@ -143,6 +145,7 @@ p {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--title-text-color);
   font-style: normal;
@@ -199,12 +202,17 @@ p {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.contacts-link > .icon-contact {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover > .icon-contact,
@@ -374,20 +382,23 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 16px 44px 0;
-  /* margin-top: 16px; */
 }
-.team-item a {
+.team-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-main-collor {
   fill: #afb1b8;
 }
 
+.team-link > .icon-team {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .team-link:hover > .icon-team,
 .team-link:focus > .icon-team {
   color: var(--accent-color);
@@ -412,11 +423,16 @@ p {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-link > .icon-clients {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover > .icon-clients,
 .clients-link:focus > .icon-clients {
-  color: var(--accent-color);
   fill: var(--accent-color);
 }
 .clients-link:hover,
@@ -463,12 +479,14 @@ footer {
 
 .web-footer {
   color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .web-footer:hover {
   color: var(--primery-bg-color);
 }
 .studio-footer {
   color: var(--primery-bg-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .studio-footer:hover {
   color: var(--accent-color);
@@ -506,7 +524,7 @@ address p:not(:last-child) {
   margin-top: 21px;
 }
 
-.social a {
+.footer-social-link {
   display: inline-flex;
   width: 44px;
   height: 44px;
@@ -516,14 +534,16 @@ address p:not(:last-child) {
   background-color: rgba(255, 255, 255, 0.1);
   background-repeat: no-repeat;
   background-position: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social-footer {
   fill: var(--primery-bg-color);
 }
 
-.social a:hover,
-.social a:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--accent-color);
 }
 
